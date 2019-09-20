@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.CalculadoraBasicaFragment">
+
+    <Button
+        android:id="@+id/zeroBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/pontoBt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/umBt" />
+
+    <Button
+        android:id="@+id/pontoBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/resultadoBt"
+        app:layout_constraintStart_toEndOf="@id/zeroBt"
+        app:layout_constraintTop_toBottomOf="@id/doisBt" />
+
+    <Button
+        android:id="@+id/resultadoBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="="
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/divisaoBt"
+        app:layout_constraintStart_toEndOf="@id/pontoBt"
+        app:layout_constraintTop_toBottomOf="@id/tresBt" />
+
+    <Button
+        android:id="@+id/divisaoBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="/"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/resultadoBt"
+        app:layout_constraintTop_toBottomOf="@id/multiplicacaoBt" />
+
+    <Button
+        android:id="@+id/multiplicacaoBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="x"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toTopOf="@id/divisaoBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tresBt"
+        app:layout_constraintTop_toBottomOf="@id/subtracaoBt" />
+
+    <Button
+        android:id="@+id/umBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="1"
+        app:layout_constraintBottom_toTopOf="@id/zeroBt"
+        app:layout_constraintEnd_toStartOf="@id/doisBt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/quatroBt" />
+
+    <Button
+        android:id="@+id/doisBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="2"
+        app:layout_constraintBottom_toTopOf="@id/pontoBt"
+        app:layout_constraintEnd_toStartOf="@id/tresBt"
+        app:layout_constraintStart_toEndOf="@id/umBt"
+        app:layout_constraintTop_toBottomOf="@id/cincoBt" />
+
+    <Button
+        android:id="@+id/tresBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="3"
+        app:layout_constraintBottom_toTopOf="@id/resultadoBt"
+        app:layout_constraintEnd_toStartOf="@id/multiplicacaoBt"
+        app:layout_constraintStart_toEndOf="@id/doisBt"
+        app:layout_constraintTop_toBottomOf="@id/seisBt" />
+
+    <Button
+        android:id="@+id/seisBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="6"
+        app:layout_constraintBottom_toTopOf="@id/tresBt"
+        app:layout_constraintEnd_toStartOf="@id/subtracaoBt"
+        app:layout_constraintStart_toEndOf="@id/cincoBt"
+        app:layout_constraintTop_toBottomOf="@id/noveBt" />
+
+    <Button
+        android:id="@+id/quatroBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="4"
+        app:layout_constraintBottom_toTopOf="@id/umBt"
+        app:layout_constraintEnd_toStartOf="@id/cincoBt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seteBt" />
+
+    <Button
+        android:id="@+id/cincoBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="5"
+        app:layout_constraintBottom_toTopOf="@id/doisBt"
+        app:layout_constraintEnd_toStartOf="@id/seisBt"
+        app:layout_constraintStart_toEndOf="@id/quatroBt"
+        app:layout_constraintTop_toBottomOf="@id/oitoBt" />
+
+    <Button
+        android:id="@+id/subtracaoBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="-"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toTopOf="@id/multiplicacaoBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/seisBt"
+        app:layout_constraintTop_toBottomOf="@id/adicaoBt" />
+
+    <Button
+        android:id="@+id/adicaoBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="+"
+        android:textColor="@android:color/holo_orange_light"
+        app:layout_constraintBottom_toTopOf="@id/subtracaoBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/noveBt"
+        app:layout_constraintTop_toBottomOf="@id/lcdTv" />
+
+    <TextView
+        android:id="@+id/lcdTv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textAlignment="textEnd"
+        android:textSize="50sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/adicaoBt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/seteBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@id/quatroBt"
+        app:layout_constraintEnd_toStartOf="@id/oitoBt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lcdTv" />
+
+    <Button
+        android:id="@+id/oitoBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@id/cincoBt"
+        app:layout_constraintEnd_toStartOf="@id/noveBt"
+        app:layout_constraintStart_toEndOf="@id/seteBt"
+        app:layout_constraintTop_toBottomOf="@id/lcdTv" />
+
+    <Button
+        android:id="@+id/noveBt"
+        style="@style/CalcButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="9"
+        app:layout_constraintBottom_toTopOf="@id/seisBt"
+        app:layout_constraintEnd_toStartOf="@id/adicaoBt"
+        app:layout_constraintStart_toEndOf="@id/oitoBt"
+        app:layout_constraintTop_toBottomOf="@id/lcdTv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
