@@ -4,6 +4,7 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import br.edu.ifsp.scl.calculadorasdmkt.R
 import br.edu.ifsp.scl.calculadorasdmkt.controller.ConfiguracaoController
@@ -47,7 +48,8 @@ class ConfiguracaoActivity: AppCompatActivity() {
         )
 
         // SETAR RESULTADO PARA MAIN ACTIVTY
-        setResult(AppCompatActivity.RESULT_OK, Intent().putExtra(Constantes.CONFIGURACAO, configuracao))
+        setResult(AppCompatActivity.RESULT_OK, Intent().
+            putExtra(Constantes.CONFIGURACAO, configuracao))
     }
 
     fun onClickSalvaConfiguracao(v: View) {
@@ -60,5 +62,7 @@ class ConfiguracaoActivity: AppCompatActivity() {
 
         // Chamar o Controller para salvar
         configuracaoController.salvaConfiguracao(novaConfiguracao)
+
+        Toast.makeText(this, "Configuração salva!", Toast.LENGTH_SHORT).show()
     }
 }
